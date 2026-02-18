@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!-- Generated using sounddrill31/actions_generate_local_manifests -->
+
+    <!-- Remotes -->
+    <remote name="LineageOS" fetch="https://github/LineageOS" clone-depth="1" />
+    <remote name="ncatt" fetch="https://cuynutt.ddns.net/ncatt" clone-depth="1" />
+
+    <!-- Removals -->
+
+    <!-- Repos -->
+    <!-- Device -->
+    <project path="device/samsung/a32" name="dt" remote="ncatt" />
+
+    <!-- Device - Common -->
+
+    <!-- Kernel -->
+    <project path="kernel/samsung/mt6768" name="kernel" remote="ncatt" />
+
+    <!-- Vendor -->
+    <project path="vendor/samsung/a32" name="vendor" remote="ncatt" />
+
+    <!-- Vendor - Common -->
+
+    <!-- Hardware -->
+    <project path="hardware/samsung" name="android_hardware_samsung" remote="LineageOS" revision="lineage-23.2" />
+    <project path="hardware/mediatek" name="hw-mtk" remote="ncatt" />
+
+    <!-- Other Repos -->
+    <project path="d>" name="android_device_mediatek_sepolicy_vndr" remote="LineageOS" revision="lineage-23.2" />
+    <project path="prebuilts/clang/host/linux-x86/clang-r383902" name="clang" remote="ncatt" />
+
+</manifest>
