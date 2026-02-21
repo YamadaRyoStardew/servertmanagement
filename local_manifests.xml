@@ -3,7 +3,7 @@
 <!-- Generated using sounddrill31/actions_generate_local_manifests -->
 
     <!-- Remotes -->
-    <remote name="LineageOS" fetch="https://github/LineageOS" clone-depth="1" />
+    <remote name="LineageOS" fetch="https://github.com/LineageOS" clone-depth="1" />
     <remote name="ncatt" fetch="https://cuynutt.ddns.net/ncatt" clone-depth="1" />
 
     <!-- Removals -->
