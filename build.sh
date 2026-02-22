@@ -16,7 +16,6 @@ git clone https://github.com/LineageOS/android_hardware_samsung -b lineage-23.2 
 
 
 # Build
-echo "-> Build started!"
 source build/envsetup.sh
 launch lineage_a32-bp4a-userdebug
 mka bacon
