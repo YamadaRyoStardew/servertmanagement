@@ -3,20 +3,15 @@
 
 # Clean
 rm -rf hardware/samsung
-rm -rf hardware/mediatek
-rm -rf device/mediatek/sepolicy_vndr
-rm -rf prebuilts/clang/host/linux-x86/clang-r383902
-
+rn -rf hardware/mediatek
 # Clone trees
-echo "-> Cloning trees"
-git clone https://github.com/wojtekojtek/device_samsung_a13ve -b
-git clone https://github.com/wojtekojtek/android_kernel_samsung_a13ve_1 -b A137FXXS8EXJ1 kernel/samsung/a13ve
-git clone https://github.com/wojtekojtek/android_vendor_samsung_a13ve_1 -b a13ve_a32 vendor/samsung/a13ve
-git clone https://github.com/LineageOS/android_hardware_samsung -b lineage-21 hardware/samsung
-git clone https://github.com/LineageOS/android_hardware_samsung_nfc -b lineage-21.0 hardware/samsung/nfc
-git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-21 hardware/mediatek
-git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b lineage-21 device/mediatek/sepolicy_vndr
-git clone https://github.com/A325F/android_prebuilts_clang_host_linux-x86_clang-6443078 prebuilts/clang/host/linux-x86/clang-r383902
+git clone https://cuynutt.ddns.net/ncatt/clang prebuilts/clang/host/linux-x86/clang-r383902
+git clone https://cuynutt.ddns.net/ncatt/dt device/samsung/a32
+kernel/samsung/mt6768
+git clone https://cuynutt.ddns.net/ncatt/hw-mtk hardware/mediatek
+git clone https://cuynutt.ddns.net/ncatt/vendor vendor/samsung/a32
+git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b lineage-23.2 device/mediatek/sepolicy_vndr
+git clone https://github.com/LineageOS/android_hardware_samsung -b lineage-23.2 hardware/samsung
 
 # Build
 echo "-> Build started!"
