@@ -1,7 +1,4 @@
-#!/bin/bash
-# Build LineageOS for a13ve (Samsung A13 4G)
-repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs
-/opt/crave/resync.sh
+
 # Clean
 rm -rf hardware/samsung
 rn -rf hardware/mediatek
@@ -17,5 +14,3 @@ git clone https://github.com/LineageOS/android_hardware_samsung -b lineage-23.2 
 
 # Build
 source build/envsetup.sh
-launch lineage_a32-bp4a-userdebug
-mka bacon
