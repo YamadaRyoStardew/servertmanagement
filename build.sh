@@ -1,7 +1,7 @@
 
 # Clean
 rm -rf hardware/samsung
-rn -rf hardware/mediatek
+rm -rf hardware/mediatek
 # Clone trees
 git clone https://cuynutt.ddns.net/ncatt/clang prebuilts/clang/host/linux-x86/clang-r383902
 git clone https://cuynutt.ddns.net/ncatt/dt device/samsung/a32
